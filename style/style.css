@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--neutral-light-gray);
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 20px;
+}
+
+#container {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+#container #description {
+  width: 100%;
+  padding: 30px;
+}
+
+#container #description p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-cyan);
+  margin-bottom: 20px;
+}
+
+#container #description p:nth-child(2) {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-bright-yellow);
+  margin-bottom: 10px;
+}
+
+#container #description p:nth-child(3) {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--neutral-grayish-blue);
+  line-height: 1.5;
+}
+
+#container #detail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#container #detail #price {
+  padding: 30px;
+  width: 100%;
+  background-color: var(--primary-cyan);
+  color: white;
+}
+
+#container #detail #price p:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#container #detail #price #price-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+#container #detail #price #price-container span:nth-child(1) {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+#container #detail #price #price-container span:nth-child(2) {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+#container #detail #price p:nth-child(3) {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+#container #detail #price button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-bright-yellow);
+  color: white;
+  font-size: 1rem;
+}
+
+#container #detail #price button:hover {
+  background-color: #d7f358;
+}
+
+#container #detail #content {
+  padding: 30px;
+  width: 100%;
+  background-color: #32cdcb;
+  color: white;
+}
+
+#container #detail #content p:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#container #detail #content p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 376px) {
+  #container #detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */
